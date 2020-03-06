@@ -52,8 +52,10 @@ class Campaign implements JsonSerializable
     /**
      * {@inheritdoc}
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
-        // TODO: Implement jsonSerialize() method.
+        return [
+            'name' => $this->getName(),
+        ];
     }
 }
