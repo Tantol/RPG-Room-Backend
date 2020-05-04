@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Class AbstractRestApiEntityController.
  *
- * @Route("/api/campaign", name="api_campaign")
+ * @Route("/api/campaign", name="api_campaign_")
  */
 class CampaignRestApiEntityController extends AbstractRestApiEntityController
 {
@@ -24,7 +24,7 @@ class CampaignRestApiEntityController extends AbstractRestApiEntityController
     /**
      * Get action.
      *
-     * @Route("/get/{id}", name="get", methods={"GET"}, requirements={"id"="\d+"})
+     * @Route("/{id}", name="get", methods={"GET"}, requirements={"id"="\d+"})
      * @SWG\Response(
      *     response=200,
      *     description="Returns entity as array",
